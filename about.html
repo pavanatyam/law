@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -274,3 +275,281 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f7fdf7;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+        .container-fluid {
+            background-color: #feffff;
+            box-shadow: 0 0 10px rgba(62, 56, 56, 0.1);
+            height: 55px;
+            width: 100%;
+        }
+        #title {
+            padding-top: 0.6%;
+            font-family: 'Roboto', sans-serif;
+            color: #17252a;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #logo {
+            margin-top: 0;
+            height: 60px;
+            width: auto;
+        }
+        .sticky-top .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .sticky-top .col-auto {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .btn {
+            margin-top: 13px;
+            padding-top: 1.8%;
+            color: #076c91;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            color: #3aafa9;
+            background-color: #def2f1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            float: left;
+            border-radius: 30%;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+        .content {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 3.5em;
+            color: #17252a;
+            margin-bottom: 20px;
+            position: relative;
+            animation: fadeInDown 1s;
+        }
+        .content p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            position: relative;
+            animation: fadeInUp 1s;
+        }
+        .highlight {
+            background-color: #def2f1;
+            padding: 40px;
+            margin: 40px 0;
+            text-size-adjust: 150px;
+            text-align: left;
+            border-left: 5px solid #2b7a78;
+            font-size: 1.5em;
+            position: relative;
+            animation: fadeInLeft 1s;
+        }
+        .highlight h2 {
+            color: #2b7a78;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-transform: uppercase;
+            border-bottom: 2px solid #3aafa9;
+            padding-bottom: 10px;
+        }
+        .highlight p {
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            position: relative;
+            animation: fadeInRight 1s;
+        }
+        .features div {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .features div:hover {
+            transform: translateY(-10px);
+        }
+        .features h3 {
+            color: #2b7a78;
+            margin-bottom: 10px;
+            font-size: 1.75em;
+            border-bottom: 2px solid #3aafa9;
+            padding-bottom: 5px;
+        }
+        .features p {
+            margin-bottom: 10px;
+        }
+        .features img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .features img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2b7a78;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            font-size: 20px;
+            width: 100%;
+        }
+        #aboutIntro {
+            padding-right: 50px;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <div class="col-auto"><img src="logo.png" alt="logo" id="logo"></div>
+            <div class="col-7" id="title">LEGAL AWARENESS</div>
+            <div class="col-1"><button class="btn" onclick="navigateHome()"><b>HOME</b></button></div>
+            <div class="col-1"><button class="btn" onclick="navigateAbout()"><b>ABOUT</b></button></div>
+            <div class="col-1"><button class="btn" onclick="navigateBlog()"><b>BLOG</b></button></div>
+            <div class="col-1"><button class="btn" onclick="navigateLogin()"><b>LOGIN</b></button></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>ABOUT US</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="law.jpg" alt="Justice and Law" class="header-image">
+                </div>
+                <div class="col-md-6" id="aboutIntro">
+                    <p>Law is a framework of rules established by governing bodies to maintain order, protect rights, and ensure justice within society. It serves as the backbone of a civilized society, providing guidelines for acceptable behavior and mechanisms to resolve disputes. In India, laws play a crucial role in safeguarding the fundamental rights of citizens, promoting equality, and fostering economic stability. They help maintain social order by preventing chaos and ensuring that individuals and institutions act within defined boundaries.</p>
+                    <p>For Indians, being aware of their basic rights is essential for safeguarding personal freedoms and ensuring fair treatment. Key rights include the Right to Equality, which prohibits discrimination; the Right to Freedom, encompassing freedoms of speech, assembly, and profession; and the Right Against Exploitation, which bans human trafficking and child labor. Additionally, cultural and educational rights protect minority communities, while the Right to Constitutional Remedies allows individuals to seek justice through the courts. Understanding these rights empowers citizens to stand up against injustices and participate actively in the democratic process, fostering a just and equitable society.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h2>The Importance of Law</h2>
+            <p>Law is the backbone of a civilized society. It ensures order, protects individual rights, and provides a framework within which people and institutions operate. Laws shape our daily lives, guiding behavior, resolving disputes, and promoting justice and equality.</p>
+            <p>By fostering an environment of fairness and equality, laws help to create a stable and predictable society where people can live and work together harmoniously. Without laws, society would descend into chaos and anarchy, where the powerful dominate the weak. Thus, the importance of law cannot be overstated; it is essential for the maintenance of peace, security, and justice in any society.</p>
+        </div>
+        
+        <div class="content">
+            <h2>What Our Website Offers</h2>
+            <div class="features">
+                <div>
+                    <img src="definition.jpg" alt="Definitions">
+                    <h3>Definitions</h3>
+                    <p>Clear explanations of legal terms and concepts to ensure you have a solid understanding of the basics.</p>
+                </div>
+                <div>
+                    <img src="sections.jpg" alt="Sections">
+                    <h3>Sections</h3>
+                    <p>Detailed breakdowns of each law by section for easy reference, making it simpler to find specific information.</p>
+                </div>
+                <div>
+                    <img src="applicable.jpg" alt="Applicable Situations">
+                    <h3>Applicable Situations</h3>
+                    <p>Practical guidance on when and how each law applies, helping you to recognize the relevance of each law in different contexts.</p>
+                </div>
+                <div>
+                    <img src="real.jpg" alt="Real-Time Examples">
+                    <h3>Real-Time Examples</h3>
+                    <p>Illustrative cases and scenarios to help contextualize the laws and see how they are applied in real-world situations.</p>
+                </div>
+                <div>
+                    <img src="act.jpg" alt="Act Objectives">
+                    <h3>Act Objectives</h3>
+                    <p>Understanding the purpose and goals behind each law, giving insight into the legislative intent and societal impact.</p>
+                </div>
+                <div>
+                    <img src="approach.jpg" alt="Legal Approaches">
+                    <h3>Legal Approaches</h3>
+                    <p>Step-by-step advice on how to approach legal issues related to each law, providing practical guidance for legal proceedings.</p>
+                </div>
+            </div>
+            <br>
+
+            <h2>Blog Section</h2>
+            <p>We also feature a <strong>blog section</strong> where users can share their experiences and insights gained from navigating the legal system. This is a space for community interaction, learning, and support. By reading about others' experiences, you can gain a better understanding of how laws are applied and how legal challenges are overcome. Your contributions to the blog can help others who are facing similar issues and foster a sense of community and shared knowledge.</p>
+            <br>
+            <h2>User Interaction</h2>
+            <p>To enhance your experience, our website includes <strong>Login and Signup pages</strong>. Create an account to personalize your journey, save your progress, and contribute to our blog section. Your account will also provide access to additional resources and tools designed to help you understand and apply the laws effectively. By logging in, you can keep track of your learning, participate in discussions, and stay updated with the latest legal information and news.</p>
+            
+            <p>Join our community today and empower yourself with the knowledge of the law! With our comprehensive resources and supportive community, you will be well-equipped to navigate the legal landscape with confidence and competence.</p>
+        </div>
+    </div>
+    <footer>
+        © 2024 Law Awareness. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 63658ed (Added files for law awareness project)
